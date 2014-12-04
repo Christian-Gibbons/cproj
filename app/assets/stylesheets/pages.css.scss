@@ -12,6 +12,12 @@
 }
 
 .selected{
-  color: darkred;
+  color: darkred !important;
+  opacity: 1 !important;
   font-weight: bold;
+}
+
+.hover{
+  opacity: .5;
+  color: red;
 }
