@@ -50,7 +50,27 @@ $(document).ready(function(){
   $('#p10').click(function(){  
     $('.link').removeClass('selected');
     $('#p10').addClass('selected');
-    $('#youtube').html('<iframe class=link id=y10 width="420" height="315" src="//www.youtube.com/embed/ajcVPo01ozA" frameborder="0" allowfullscreen></iframe><p>Project Goal: To interface the Hubo robot with an android smartphone.<br><br>Low Level control: To control the joints, there we created a function that takes in an array that contains joint IDs and positions to set them at, and the number of steps to interpolate the movement in order to allow us to move the joints fluidly and concurrently.<br><br>High Level Control: Balance is kept through static stability, keeping the center of mass over the support polygon of the robot.  The walking algorithm was designed by carefully looking at a human\'s walking pattern and identify keyframes that can be used in a statically stable manner.  This algorithm consists of shifting weight over one foot and lifting up the other foot and extending it forward.  The foot bearing weight then bends down to put the other foot on the ground, and then the body leans forward and centers the hips to put weight back on both feet.  Then the back leg straightens while the front leg bends at the knee shifting the center of mass towards the front.  The hips then move into position over the front foot which then straightens allowing the back leg to swing forward and set back down on the ground.<br><br>Android control: The Android phone interfaces with the robot with UDP packets sent over wifi.  The packet is received selects a function to run that will move the Hubo robot.<br><br>To run project: Start up the hubo simulator:<br>$ hubo-ach sim openhubo physics<br><br>Then start the server:<br>$ ./hubo-walk<br><br>Finally, run the android app "test.apk".<br><br>One thing we would have done differently if we had more time in the integration process was was separate the UDP server from the controller into separate processes so that the server did not have to wait on the walking algorithm to complete in order to send or receive packets, which would allow the transmission of sensor data to the android in real-time.r</p>');   
+    $('#youtube').html('<iframe class=link id=y10 width="420" height="315" src="//www.youtube.com/embed/ajcVPo01ozA" frameborder="0" allowfullscreen></iframe><div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>Project Goal: To interface the Hubo robot with an android smartphone.<br><br>Low Level control: To control the joints, there we created a function that takes in an array that contains joint IDs and positions to set them at, and the number of steps to interpolate the movement in order to allow us to move the joints fluidly and concurrently.<br><br>High Level Control: Balance is kept through static stability, keeping the center of mass over the support polygon of the robot.  The walking algorithm was designed by carefully looking at a human\'s walking pattern and identify keyframes that can be used in a statically stable manner.  This algorithm consists of shifting weight over one foot and lifting up the other foot and extending it forward.  The foot bearing weight then bends down to put the other foot on the ground, and then the body leans forward and centers the hips to put weight back on both feet.  Then the back leg straightens while the front leg bends at the knee shifting the center of mass towards the front.  The hips then move into position over the front foot which then straightens allowing the back leg to swing forward and set back down on the ground.<br><br>Android control: The Android phone interfaces with the robot with UDP packets sent over wifi.  The packet is received selects a function to run that will move the Hubo robot.<br><br>To run project: Start up the hubo simulator:<br>$ hubo-ach sim openhubo physics<br><br>Then start the server:<br>$ ./hubo-walk<br><br>Finally, run the android app "test.apk".<br><br>One thing we would have done differently if we had more time in the integration process was was separate the UDP server from the controller into separate processes so that the server did not have to wait on the walking algorithm to complete in order to send or receive packets, which would allow the transmission of sensor data to the android in real-time.r</p></div>');   
+  });
+  $('#g1').click(function(){
+    $('.link').removeClass('selected');
+    $('#g1').addClass('selected');
+    $('#youtube').html('<a href="http://taroomiya.com/games/susies-summer-home/webplayer/"><img src="/assets/susie.png"></a>');
+  })
+  $('#g2').click(function(){ 
+    $('.link').removeClass('selected');
+    $('#g2').addClass('selected');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/digital-template/"><img src="/assets/dog_catcher.png"></a>');
+  });
+  $('#g3').click(function(){ 
+    $('.link').removeClass('selected');
+    $('#g3').addClass('selected');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/box-o-kittens/"><img src="/assets/cat_lady.png" alt="click to play"></a>');
+  });
+  $('#g4').click(function(){ 
+    $('.link').removeClass('selected');
+    $('#g4').addClass('selected');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/reluctant-protagonist/"><img src="/assets/reluctant_protagonist.png"></a>');
   });
   $('#p1').mouseenter(function(){
     $('#p1').addClass('hover');
@@ -111,5 +131,29 @@ $(document).ready(function(){
   });
   $('#p10').mouseout(function(){
     $('#p10').removeClass('hover');
+  });
+  $('#g1').mouseenter(function(){
+    $('#g1').addClass('hover');
+  });
+  $('#g1').mouseout(function(){
+    $('#g1').removeClass('hover');
+  });
+  $('#g2').mouseenter(function(){
+    $('#g2').addClass('hover');
+  });
+  $('#g2').mouseout(function(){
+    $('#g2').removeClass('hover');
+  });
+  $('#g3').mouseenter(function(){
+    $('#g3').addClass('hover');
+  });
+  $('#g3').mouseout(function(){
+    $('#g3').removeClass('hover');
+  });
+  $('#g4').mouseenter(function(){
+    $('#g4').addClass('hover');
+  });
+  $('#g4').mouseout(function(){
+    $('#g4').removeClass('hover');
   });
 });
