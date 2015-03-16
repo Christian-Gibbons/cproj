@@ -55,22 +55,37 @@ $(document).ready(function(){
   $('#g1').click(function(){
     $('.link').removeClass('selected');
     $('#g1').addClass('selected');
-    $('#youtube').html('<a href="http://taroomiya.com/games/susies-summer-home/webplayer/"><img src="/assets/susie.png"></a>');
+    $('#youtube').html('<a href="http://taroomiya.com/games/susies-summer-home/webplayer/" target="_blank"><img src="/assets/susie.png"></a>');
   })
   $('#g2').click(function(){ 
     $('.link').removeClass('selected');
     $('#g2').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/digital-template/"><img src="/assets/dog_catcher.png"></a>');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/digital-template/" target="_blank"><img src="/assets/dog_catcher.png"></a>');
   });
   $('#g3').click(function(){ 
     $('.link').removeClass('selected');
     $('#g3').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/box-o-kittens/"><img src="/assets/cat_lady.png" alt="click to play"></a>');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/box-o-kittens/" target="_blank"><img src="/assets/cat_lady.png" alt="click to play"></a>');
   });
   $('#g4').click(function(){ 
     $('.link').removeClass('selected');
     $('#g4').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/reluctant-protagonist/"><img src="/assets/reluctant_protagonist.png"></a>');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/reluctant-protagonist/" target="_blank"><img src="/assets/reluctant_protagonist.png"></a>');
+  });
+  $('#m2').click(function(){
+    $('.link').removeClass('selected');
+    $('#m2').addClass('selected');
+    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/d83I6kwt27M" frameborder="0" allowfullscreen></iframe>');
+  });
+  $('#m3').click(function(){
+    $('.link').removeClass('selected');
+    $('#m3').addClass('selected');
+    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/5lXmQ04Dw4M" frameborder="0" allowfullscreen></iframe>');
+  });
+  $('#m4').click(function(){
+    $('.link').removeClass('selected');
+    $('#m4').addClass('selected');
+    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/gkbI7YhZw30" frameborder="0" allowfullscreen></iframe>');
   });
   $('#p1').mouseenter(function(){
     $('#p1').addClass('hover');
@@ -155,5 +170,23 @@ $(document).ready(function(){
   });
   $('#g4').mouseout(function(){
     $('#g4').removeClass('hover');
+  });
+  $('#m2').mouseenter(function(){
+    $('#m2').addClass('hover');
+  });
+  $('#m2').mouseout(function(){
+    $('#m2').removeClass('hover');
+  });
+  $('#m3').mouseenter(function(){
+    $('#m3').addClass('hover');
+  });
+  $('#m3').mouseout(function(){
+    $('#m3').removeClass('hover');
+  });
+  $('#m4').mouseenter(function(){
+    $('#m4').addClass('hover');
+  });
+  $('#m4').mouseout(function(){
+    $('#m4').removeClass('hover')
   });
 });
