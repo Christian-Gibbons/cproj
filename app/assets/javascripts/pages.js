@@ -87,6 +87,11 @@ $(document).ready(function(){
     $('#m4').addClass('selected');
     $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/gkbI7YhZw30" frameborder="0" allowfullscreen></iframe>');
   });
+  $('#f1').click(function(){
+    $('.link').removeClass('selected');
+    $('#f1').addClass('selected');
+    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/89exmi1MgUg" frameborder="0" allowfullscreen></iframe><div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>This is a dumbed down Pacman clone I wrote for the Xilinx Spartan-6 FPGA running on the Nexys3 board.  Programmed in VHDL.</p></div>');
+  });
   $('#p1').mouseenter(function(){
     $('#p1').addClass('hover');
   });
@@ -188,5 +193,11 @@ $(document).ready(function(){
   });
   $('#m4').mouseout(function(){
     $('#m4').removeClass('hover')
+  });
+  $('#f1').mouseenter(function(){
+    $('#f1').addClass('hover');
+  });
+  $('#f1').mouseout(function(){
+    $('#f1').removeClass('hover');
   });
 });
