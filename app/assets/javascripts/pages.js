@@ -72,6 +72,11 @@ $(document).ready(function(){
     $('#g4').addClass('selected');
     $('#youtube').html('<a href="http://christian-gibbons.github.io/reluctant-protagonist/" target="_blank"><img src="/assets/reluctant_protagonist.png"></a>');
   });
+  $('#g5').click(function(){
+    $('.link').removeClass('selected');
+    $('#g5').addClass('selected');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/platformer-V2/" target="_blank"><img src="/assets/platformer.png"></a>');
+  });
   $('#m2').click(function(){
     $('.link').removeClass('selected');
     $('#m2').addClass('selected');
@@ -175,6 +180,12 @@ $(document).ready(function(){
   });
   $('#g4').mouseout(function(){
     $('#g4').removeClass('hover');
+  });
+  $('#g5').mouseenter(function(){
+    $('#g5').addClass('hover');
+  });
+  $('#g5').mouseout(function(){
+    $('#g5').removeClass('hover');
   });
   $('#m2').mouseenter(function(){
     $('#m2').addClass('hover');
