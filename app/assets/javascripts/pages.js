@@ -77,6 +77,11 @@ $(document).ready(function(){
     $('#g5').addClass('selected');
     $('#youtube').html('<a href="http://christian-gibbons.github.io/platformer-V2/" target="_blank"><img src="/assets/platformer.png"></a>');
   });
+  $('#g6').click(function(){
+    $('.link').removeClass('selected');
+    $('#g6').addClass('selected');
+    $('#youtube').html('<a href="http://christian-gibbons.github.io/crazy-cat-lady-V2/" target="_blank"><img src="/assets/cat_lady_2.png"></a>');
+  });
   $('#m2').click(function(){
     $('.link').removeClass('selected');
     $('#m2').addClass('selected');
@@ -186,6 +191,12 @@ $(document).ready(function(){
   });
   $('#g5').mouseout(function(){
     $('#g5').removeClass('hover');
+  });
+  $('#g6').mouseenter(function(){
+    $('#g6').addClass('hover');
+  });
+  $('#g6').mouseout(function(){
+    $('#g6').removeClass('hover');
   });
   $('#m2').mouseenter(function(){
     $('#m2').addClass('hover');
