@@ -55,32 +55,32 @@ $(document).ready(function(){
   $('#g1').click(function(){
     $('.link').removeClass('selected');
     $('#g1').addClass('selected');
-    $('#youtube').html('<a href="http://taroomiya.com/games/susies-summer-home/webplayer/" target="_blank"><img src="/assets/susie.png"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://taroomiya.com/games/susies-summer-home/webplayer/" target="_blank"><img src="/assets/susie.png"></a><div style="height:250px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>This game was developed for the 2012 Global Game Jam.  We had 72 hours to complete the entire design process.  The game was built on the Unity engine which makes use of C#, a programming language I had, to that point, no experience with, but I jumped in and started contributing code to the project on day 1.  Developing this game was a great opportunity to pick up experience working as part of a team.</p></div>');
   })
   $('#g2').click(function(){ 
     $('.link').removeClass('selected');
     $('#g2').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/digital-template/" target="_blank"><img src="/assets/dog_catcher.png"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://christian-gibbons.github.io/digital-template/" target="_blank"><img src="/assets/dog_catcher.png"></a><div style="height:250px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>This is the first game I made in the Phaser game engine as well as my first real experience in Javascript.  My primary focus with this game was familiarize myself with the capabilities of the engine and with the Javascript language.</p></div>');
   });
   $('#g3').click(function(){ 
     $('.link').removeClass('selected');
     $('#g3').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/box-o-kittens/" target="_blank"><img src="/assets/cat_lady.png" alt="click to play"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://christian-gibbons.github.io/box-o-kittens/" target="_blank"><img src="/assets/cat_lady.png" alt="click to play"></a><div style="height:250px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>I had started this game with the intention of making an action game, however while I was play-testing the throwing mechanic of the game, I found that just trying to hit a target was pretty entertaining by itself, so I turned it into a shooting gallery of sorts.  The random placement of the targets along a timer encouraging you to complete the game in as little time as you can brings some replayability to the game.  I made use of Tiled--a tilemap editor--for the first time to design the background and create a collision layer.</p></div>');
   });
   $('#g4').click(function(){ 
     $('.link').removeClass('selected');
     $('#g4').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/reluctant-protagonist/" target="_blank"><img src="/assets/reluctant_protagonist.png"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://christian-gibbons.github.io/reluctant-protagonist/" target="_blank"><img src="/assets/reluctant_protagonist.png"></a><div style="height:175px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>For this game, I was experimenting with the concept of having character that the game centers around controlled indirectly by the player.  I wanted so create a game where the character was manipulated into doing something in its effort to avoid the player-controlled character.  To try to bring in replayability, I made the balls choose their spawn-point, speed, and direction randomly, which also adds to the difficulty as the player will quickly decide where to manipulate the NPC to as well as where to move their own character to be set up their next move.</p><p>I further built upon my knowledge of Tiled in learning to make use of its terrain feature as well learning how to place objects in the object layer that my game can make use of.</div>');
   });
   $('#g5').click(function(){
     $('.link').removeClass('selected');
     $('#g5').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/platformer-V2/" target="_blank"><img src="/assets/platformer.png"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://christian-gibbons.github.io/platformer-V2/" target="_blank"><img src="/assets/platformer.png"></a><div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>Before working on this game, I had done some experimenting in Tiled learning to make use of its automapping feature.  I used this to automatically generate a collision layer by creating a set of rules based on the tiles placed in the background.  I also wanted to experiment with a more advanced collision scheme that added directional collision allowing the player, for certain tiles, to be able to jump through a tile from underneath and land on top of it.  I also used game states for the first time in this game allowing me to add multiple stages to the game.  For gameplay, I added in a variable jump height mechanic and spent some time tuning it so that it doesn\'t get a floaty feeling and the player feels like they have strong control of their jumping since it is an important aspect to platformers.</p></div>');
   });
   $('#g6').click(function(){
     $('.link').removeClass('selected');
     $('#g6').addClass('selected');
-    $('#youtube').html('<a href="http://christian-gibbons.github.io/crazy-cat-lady-V2/" target="_blank"><img src="/assets/cat_lady_2.png"></a>');
+    $('#youtube').html('<p>Click picture to play</p><a href="http://christian-gibbons.github.io/crazy-cat-lady-V2/" target="_blank"><img src="/assets/cat_lady_2.png"></a><div style="height:250px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>My original vision as I was creating the first Crazy Cat Lady was a more action-oriented game, and I decided to revisit the game and bring back that original vision.  It is only a short one-level proof-of-concept, but I am pleased with how the enemy AI turned out that kicked up the difficulty but was fair.  I wanted to come up with a more advanced movement algorithm for the boss, but I had run out of time when I had gotten to that part.  The difficulty is still there with the spread-shot that it fires as well as its ability to resurrect other aliens to help it adding in supporting fire from another direction.</p></div>');
   });
   $('#m2').click(function(){
     $('.link').removeClass('selected');
@@ -95,7 +95,7 @@ $(document).ready(function(){
   $('#m4').click(function(){
     $('.link').removeClass('selected');
     $('#m4').addClass('selected');
-    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/gkbI7YhZw30" frameborder="0" allowfullscreen></iframe>');
+    $('#youtube').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/gkbI7YhZw30" frameborder="0" allowfullscreen></iframe><div style="height:300px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;"><p>This is a task scheduler I wrote for the MSP430 and a program I wrote to show the scheduler at work.  For the priority queue, I wrote my own heap data structure.  Heaps are not traditionally a "searchable" data structure, but I designed my heap on top of an array that could be searched through to avoid attempting to add a task that is already scheduled for execution.</p><p>I wanted my scheduler to be moduler so that it could included as a library in a project that needed scheduling rather than hard-coding the scheduler into each program.  In order to accomplish this, the scheduler makes use of an array of function pointers so that the tasks to be scheduled can be passed into this array without touching the code for the scheduler.</p><p>The program I wrote to test the functionality of my scheduler is comprised of three tasks and a low-power idle state.  The task with the highest priority draws a sprite onto the OLED display; this task is repeatedly scheduled by a timer.  The next highest priority task is a count-down.  It counts down from 9 to 0 before it finishes.  The lowest priority task is to turn the sprite around and make it move across the screen in the opposite direction.  Those two tasks are schedule by the press of a button.  These three tasks together show the concurrency, priority, and pre-emption of the scheduler.  When the button is pressed scheduling the countdown and the turn-around, the sprite continues to move across the screen while the timer countdown occurs as it is a higher priority and comes in to execute when needed.  The sprite does not turn around until the countdown has finished even though it is scheduled at the same time as the countdown because the countdown has a higher priority preventing the turn-around from occuring until it finishes and is removed from the schedule queue.</p></div>');
   });
   $('#f1').click(function(){
     $('.link').removeClass('selected');
